@@ -1,0 +1,882 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+.main-mobile {
+    display: none;
+}
+
+.drop-menu-mobile {
+    display: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    display: inline;
+    z-index: 2;
+    transform: translateX(5rem);
+}
+
+.menu1 {
+    float: left;
+}
+
+.logo,
+.menu {
+    display: inline;
+    margin: 20px;
+    position: relative;
+    left: 100px;
+}
+
+#form_buscar {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 51rem;
+}
+
+.logo {
+    position: relative;
+    top: 5px;
+}
+
+.menu2 {
+    float: right;
+    position: relative;
+    left: 25rem;
+}
+
+.menu2 li {
+    display: inline;
+}
+
+#triangulo {
+    display: none;
+    position: absolute;
+    transform: translate(7.5rem, 3.5rem);
+}
+
+.bg-drop-menu {
+    display: none;
+    z-index: -1;
+    margin-top: 1.5rem;
+    position: absolute;
+    line-height: 2px;
+    width: 565px;
+    height: 249px;
+    top: 3rem;
+    left: 0.5rem;
+    /* Dark blue */
+    background-color: #3EC6E0;
+    /* Blue */
+    border: 2px solid #3EC6E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.drop-menu {
+    display: none;
+    margin-top: 1.5rem;
+    position: absolute;
+    line-height: 2px;
+    width: 565px;
+    height: 249px;
+    /* Dark blue */
+    background: #084154;
+    /* Blue */
+    border: 2px solid #3EC6E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.drop-menu ul {
+    margin-left: 3rem;
+    columns: 1;
+    display: inline-block;
+    margin-top: 2em!important;
+    list-style: none;
+}
+
+.drop-menu ul .jg {
+    font-family: Roboto;
+    font-size: 14px;
+    padding: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 2rem;
+}
+
+.jg:hover {
+    position: relative;
+    background: #3EC6E0;
+    border-radius: 5px;
+}
+
+.titulo-drop {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.line {
+    position: relative;
+    width: 30px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+    margin-right: 1rem;
+}
+
+.titulo-menu {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+object {
+    position: relative;
+    top: 5px
+}
+
+.carousel-contrnext-icon.laptop {
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+}
+
+.carousel-control-next-icon .laptop {
+    position: relative;
+    right: 1rem;
+    top: 1rem;
+}
+
+#carrinho {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 8px;
+    top: 3.5px;
+}
+
+.slider-conteudo {
+    position: relative;
+    bottom: 13rem;
+    right: 15rem;
+}
+
+.mk {
+    position: absolute;
+    width: 700px;
+    height: 54px;
+    left: 580px;
+    top: 209px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 54px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.pmk {
+    /* R$ 299 */
+    position: absolute;
+    width: 226px;
+    height: 82px;
+    left: 830px;
+    top: 268px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 82px;
+    /* identical to box height */
+    /* Blue */
+    color: #3EC6E0;
+}
+
+.pmk2 {
+    position: absolute;
+    width: 40px;
+    height: 33px;
+    left: 1045px;
+    top: 278px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+    /* Blue */
+    color: #3EC6E0;
+}
+
+.descricao {
+    position: absolute;
+    width: 420px;
+    height: 163px;
+    left: 700px;
+    top: 373px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 155%;
+    /* or 25px */
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.slider {
+    position: relative;
+    bottom: 4rem;
+    left: 12rem;
+    float: right;
+    width: 63px;
+    height: 384px;
+    background: #3EC6E0;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.slider-titulo {
+    position: absolute;
+    width: 120px;
+    height: 0px;
+    padding-top: 30px;
+    top: 5rem;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.slider-titulo2 {
+    position: absolute;
+    width: 130px;
+    height: 0px;
+    padding-top: 30px;
+    top: 5rem;
+    font-family: Roboto;
+    font-size: 12px;
+    color: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.line-slider {
+    position: relative;
+    width: 70px;
+    top: 13rem;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.trocar {
+    position: absolute;
+    width: 63px;
+    height: 84px;
+    top: 300px;
+    background: #084154;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.number {
+    position: relative;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    top: 15px;
+}
+
+.seta {
+    position: relative;
+    text-align: center;
+    top: 1rem
+}
+
+.seta object {
+    padding: 1px
+}
+
+
+/* MAIN */
+
+div.box {
+    width: 300px;
+    display: inline-block;
+}
+
+.zelda {
+    position: relative;
+    left: 10rem;
+    bottom: 5rem;
+}
+
+.sekiro {
+    position: relative;
+    left: 21rem;
+    bottom: 5rem;
+}
+
+div.box span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 3rem;
+    /* identical to box height */
+    /* Dark blue */
+    color: #084154;
+}
+
+div.box div {
+    width: 440px;
+    height: 50px;
+    /* Blue */
+    background: #3EC6E0;
+    border-radius: 5px;
+    position: relative;
+    bottom: 2rem;
+}
+
+.destaque {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+    /* Dark blue */
+    color: #084154;
+    position: relative;
+}
+
+.box-jogo {
+    width: 300px;
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.desc-jogo {
+    background: #F5F5F5;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.titulo-jogo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* Dark blue */
+    color: #084154;
+    position: relative;
+    margin-bottom: 2rem;
+    left: 2rem;
+}
+
+.preco-jogo {
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    /* Dark blue */
+    color: #084154;
+    margin-bottom: 2rem;
+    left: 2rem;
+}
+
+.container {
+    position: relative;
+    left: 4rem;
+}
+
+.btn {
+    position: relative;
+    background: #3EC6E0;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    width: 200px;
+    left: 3.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(8, 65, 84, 0.62);
+    /* Fallback color */
+    background-color: rgba(8, 65, 84, 0.62);
+    /* Black w/ opacity */
+}
+
+#pop-up {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.close-pop {
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.mario-pop {
+    position: relative;
+    left: 3.5rem;
+    top: 4rem;
+}
+
+.txt-pop-up {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+    /* Dark blue */
+    color: #084154;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    bottom: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul li {
+    height: 50px;
+}
+
+footer ul .n1 {
+    /* Dark blue */
+    float: left;
+    width: 35%;
+    background: #084154;
+}
+
+footer ul .n1 img {
+    float: right;
+    margin-right: 2rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+footer ul .copy {
+    /* Blue */
+    float: right;
+    width: 65%;
+    background: #3EC6E0;
+}
+
+footer ul li g {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 2rem;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .laptop {
+        display: none!important;
+    }
+    .mobile {
+        display: block;
+        z-index: 1;
+    }
+    nav {
+        all: revert
+    }
+    .drop-menu-mobile {
+        display: none;
+        background-color: #084154;
+        height: 100%;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+    .drop-menu-mobile ul {
+        list-style: none;
+    }
+    .nav-drop li {
+        display: inline;
+    }
+    #carrinho-menu-drop,
+    #carrinho-menu {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 8px;
+        top: 3.5px;
+    }
+    .drop-menu-mobile .titulo {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height */
+        color: #FFFFFF;
+    }
+    .drop-menu-mobile .jogo {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 10px;
+        color: #FFFFFF;
+        width: 200px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .drop-menu-mobile .jogo:hover {
+        background: #3EC6E0;
+        border-radius: 5px;
+    }
+    .menu1 {
+        float: left;
+        top: 10px;
+        position: relative;
+        right: 11rem!important;
+    }
+    .menu2 {
+        all: revert;
+        float: right;
+        position: relative;
+        top: -5px;
+        right: 3rem;
+    }
+    .nav-drop li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .line {
+        position: relative;
+        width: 30px;
+        height: 0px;
+        border: 1px solid #FFFFFF;
+        transform: rotate(90deg);
+        margin-left: 0.8rem;
+    }
+    #elipse-carrinho {
+        position: relative;
+        right: 1rem;
+    }
+    .titulo-menu {
+        display: none;
+    }
+    .carousel-caption.header {
+        position: unset;
+        transform: translateY(-14rem);
+    }
+    #seta {
+        background-color: #3EC6E0;
+        border-radius: 0px 0px 0px 10px;
+        padding-top: 2rem;
+    }
+    .mobile .sub-titulo {
+        width: 65%;
+        float: left;
+        position: relative;
+        bottom: 1rem;
+        right: 2rem;
+        background-color: #3EC6E0;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    .mobile .num-mobile {
+        background: #084154;
+        width: 35%;
+        position: relative;
+        bottom: 2rem;
+        float: right;
+        padding-top: 1.25rem;
+    }
+    .mobile .num-mobile p {
+        position: relative;
+        right: 2.5rem;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    #seta div {
+        display: inline;
+    }
+    #desc {
+        background-color: rgba(10, 23, 55, 0.5);
+    }
+    .mobile .titulo {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-align: right;
+        margin-right: 3rem;
+    }
+    .slider-titulo .preco,
+    .cent {
+        display: inline;
+    }
+    .mobile .preco {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        /* Blue */
+        color: #3EC6E0;
+        margin-left: 15rem;
+    }
+    .mobile .cent {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        position: relative;
+        bottom: 0.75rem;
+        line-height: 33px;
+        /* Blue */
+        color: #3EC6E0;
+    }
+    .descricao-mobile {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 155%;
+        /* or 19px */
+        text-align: right;
+        color: #FFFFFF;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .slider-mobile {
+        all: revert
+    }
+    .slider-titulo {
+        all: revert;
+    }
+    .line-slider {
+        all: revert;
+    }
+    .main-laptop {
+        display: none;
+    }
+    .main-mobile {
+        display: block;
+        margin-top: 1rem;
+    }
+    /*BOX dos jogos*/
+    div.box.titulo-destaque {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 3rem;
+        color: #084154;
+    }
+    div.box-sekiro div {
+        width: 380px;
+        height: 50px;
+        background: #3EC6E0;
+        border-radius: 5px;
+        position: relative;
+        bottom: 2rem;
+        left: 1.5rem;
+    }
+    div.box-zelda,
+    .box-sekiro span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 3rem;
+        color: #084154;
+    }
+    div.box-zelda div {
+        width: 380px;
+        height: 50px;
+        background: #3EC6E0;
+        border-radius: 5px;
+        position: relative;
+        bottom: 2rem;
+        left: 1.5rem;
+    }
+    /*SLIDER JOGOS EM DESTAQUE*/
+    .main-mobile .carousel-inner {
+        padding-bottom: 10rem;
+    }
+    .main-mobile .desc-jogo {
+        width: 300px;
+        position: relative;
+        bottom: -13rem;
+    }
+    .main-mobile .titulo-jogo {
+        position: initial;
+    }
+    .main-mobile .preco-jogo {
+        position: initial;
+    }
+    .main-mobile .btn {
+        position: initial;
+    }
+    .main-mobile .carousel-item img {
+        position: relative;
+        left: 5rem;
+    }
+    .main-mobile .box-jogo {
+        position: absolute;
+        left: 2rem;
+        height: 550px;
+        width: 350px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+    }
+    #carouselExampleControls .carousel-control-prev-icon {
+        background: url(vagadev-jr-main/svgs/angle-left-solid-white.svg)!important;
+        position: relative;
+        left: 20rem;
+    }
+    #carouselExampleControls .carousel-control-next-icon {
+        background: url(vagadev-jr-main/svgs/angle-right-solid-white.svg)!important;
+    }
+    .carousel-control-prev-icon {
+        background: url(vagadev-jr-main/svgs/angle-left-solid.svg)!important;
+    }
+    .carousel-control-next-icon {
+        background: url(vagadev-jr-main/svgs/angle-right-solid.svg)!important;
+    }
+    /*FOOTER*/
+    footer {
+        width: 100%;
+        margin-top: 5rem;
+        bottom: 0;
+        display: inline-block;
+        list-style: none;
+    }
+    footer ul li {
+        height: 50px;
+    }
+    footer ul .n1 {
+        /* Dark blue */
+        float: left;
+        width: 20%;
+        background: #084154;
+    }
+    footer ul .n1 img {
+        float: right;
+        margin-right: 2rem;
+        position: relative;
+        top: 0.5rem;
+    }
+    footer ul .copy {
+        /* Blue */
+        float: right;
+        width: 80%;
+        background: #3EC6E0;
+    }
+    footer ul li g {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        text-align: center;
+        color: #FFFFFF;
+        float: left;
+        margin-left: 2rem;
+        line-height: 3rem;
+    }
+}

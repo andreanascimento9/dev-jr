@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Vaga Dev Jr - N1</title>
+</head>
+
+<body>
+    <header>
+        <!--Layout LapTop com classes pais denominadas laptop-->
+        <nav class="laptop">
+            <div class="menu1">
+                <img id="triangulo" src="vagadev-jr-main/img/Rectangle 7.png">
+
+
+                <div id="drop" onclick="abrir()" class="menu" style="cursor: pointer;"><img src="vagadev-jr-main/img/icon_hamburguer.png" alt="" srcset=""></div>
+
+
+                <div id="drop-menu" class="drop-menu">
+
+
+                    <div style="float: right; cursor: pointer; color: white; position: relative; top: 1rem; right: 1rem; " id="close">&#x2715</div>
+
+
+                    <ul>
+                        <li class="titulo-drop">Luta</li><br>
+                        <li class="jg">Mortal Kombat</li><br>
+                        <li class="jg">Smash Bros</li><br>
+                        <li class="jg">Killer Instict</li><br>
+                        <li class="jg">DBZ Kakarot</li>
+                    </ul>
+                    <ul>
+                        <li class="titulo-drop">Ação / Aventura</li><br>
+                        <li class="jg">GTA V</li><br>
+                        <li class="jg">Tomb Raider</li><br>
+                        <li class="jg">HALO</li><br>
+                        <li class="jg">Call of Duty</li>
+                    </ul>
+                    <ul style="position: relative; bottom:5.5rem;">
+                        <li class="titulo-drop">Corrida</li><br>
+                        <li class="jg">NEED for SPEED</li><br>
+                        <li class="jg">Forza Horizon</li>
+                    </ul>
+                </div>
+                <div id="bg-drop-menu" class="bg-drop-menu"> </div>
+                <div class="logo"><object data="vagadev-jr-main/svgs/logo.svg" type="image/svg+xml"></object></div>
+
+            </div>
+            <ul class="menu2">
+                <li style="cursor: pointer;" class=""><a style="text-decoration: none;" href="mailto:andre.d.nascimento@uol.com.br"><object data="vagadev-jr-main/svgs/paper-plane.svg" type="image/svg+xml"></object>
+                <g class="titulo-menu">CONTATO</g></a>
+                </li>
+                <g class="line"></g>
+                <li id="buscar" style="cursor: pointer;" class=""><object data="vagadev-jr-main/svgs/search-solid.svg" type="image/svg+xml"></object>
+                    <g class="titulo-menu">BUSCAR</g>
+                </li>
+                <g class="line"></g>
+                <li class=""><object data="vagadev-jr-main/svgs/shopping-bag-solid.svg" type="image/svg+xml"></object></li>
+                <li id="elipse-carrinho" style="position: relative; bottom: 3px;">
+                    <p id="carrinho">0</p> <img id="elipse" src="vagadev-jr-main/img/Ellipse 1.png" alt="" srcset=""></li>
+            </ul>
+            <input type="text" id="form_buscar">
+            <div style="display: none; z-index: 99; cursor: pointer; color: #3EC6E0; position: absolute; transform: translate(60rem,3.1rem); " id="close_form">&#x2715</div>
+        </nav>
+
+        <div style="z-index: 0;" id="carouselExampleControls" class="carousel slide laptop" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="z-index: 1;" class="d-block w-100" src="vagadev-jr-main/img/principal_banner_desktop.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="slider">
+                            <div class="slider-titulo">MORTAL KOMBAT</div>
+                            <div class="line-slider"></div>
+                            <div class="trocar">
+                                <div class="number">
+                                    1/2
+                                </div>
+                                <div class="seta">
+
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only"><</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">></span>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-conteudo" style="text-align: center;">
+                            <h1 class="mk">MORTAL KOMBAT</h1>
+                            <div class="preco">
+                                <h1 class="pmk">R$ 299</h1>
+                                <g class="pmk2">,99</g>
+                            </div>
+                            <p class="descricao">Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo
+                                de luta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="vagadev-jr-main/img/principal_banner_desktop_02.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="slider">
+                            <div class="slider-titulo2">RED DEAD REDEMPTION</div>
+                            <div class="line-slider"></div>
+                            <div class="trocar">
+                                <div class="number">
+                                    2/2
+                                </div>
+                                <div class="seta">
+
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon-laptop" aria-hidden="true"></span>
+                                        <span class="sr-only"><object data="vagadev-jr-main/svgs/angle-left-solid.svg" type=""></object></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon-laptop" aria-hidden="true"></span>
+                                        <span class="sr-only"><object  data="vagadev-jr-main/svgs/angle-right-solid.svg" type=""></object></span>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Layout Mobile com classes pais denominadas mobile-->
+
+        <nav class="mobile">
+            <ul class="nav-drop" style=" position: absolute; z-index: 1; top: 0.5rem;">
+                <li style="cursor: pointer;" id="drop_mobile" onclick="abrir()"><img src="vagadev-jr-main/img/icon_hamburguer.png"></li>
+                <li><object data="vagadev-jr-main/svgs/logo.svg" width="100" type=""></object></li>
+            </ul>
+            <ul class="nav-drop" style=" position: absolute; z-index: 1; left:14rem;">
+                <li><a style="text-decoration: none;" href="mailto:andre.d.nascimento@uol.com.br"><object data="vagadev-jr-main/svgs/paper-plane.svg" type=""></object></a></li>
+                <li style="cursor: pointer;" id="drop-search"><object data="vagadev-jr-main/svgs/search-solid.svg" type=""></object></li>
+                <li><object data="vagadev-jr-main/svgs/shopping-bag-solid.svg" type=""></object></li>
+                <li style="position: relative; right: 2rem;" id="elipse-carrinho">
+                    <p id="carrinho-menu-drop">0</p> <img id="elipse" src="vagadev-jr-main/img/Ellipse 1.png"></li>
+            </ul>
+        </nav>
+
+        <div style="z-index: 0;" id="carouselExampleControls" class="carousel slide mobile" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="z-index: 1;" class="d-block w-100" src="vagadev-jr-main/img/principal_banner_mobile.jpg" alt="First slide">
+                    <div class="carousel-caption header" id="desc">
+                        <div class="posicao">
+                            <div class="slider-mobile">
+                                <div class="slider-titulo">
+                                    <div class="titulo">MORTAL KOMBAT</div>
+                                    <div class="preco">R$299</div>
+                                    <div class="cent">,99</div>
+                                    <div class="descricao-mobile">Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o
+                                        estilo de luta.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-caption header" id="seta">
+                        <div class="posicao">
+                            <div class="sub-titulo">MORTAL KOMBAT</div>
+                            <div class="num-mobile">
+                                <p>1/2</p>
+                            </div>
+
+
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only"><object data="vagadev-jr-main/svgs/angle-left-solid.svg" type=""></object></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only"><object  data="vagadev-jr-main/svgs/angle-right-solid.svg" type=""></object></span>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+    <div class="search-mobile" style="display: none; position: absolute; z-index: 1; bottom: 33rem; left: 15rem;">
+        <input type="text" id="form_buscar_mobile">
+        <div style="z-index: 99; cursor: pointer; color: #3EC6E0;position: relative; bottom: 1.60rem; left: 9.5rem;" id="close_form_mobile">&#x2715</div>
+    </div>
+
+    <div class="drop-menu-mobile">
+        <ul class="nav-drop" style=" padding-bottom: 50px;">
+            <li style="color: white; font-size: 28px; cursor: pointer;" id="close_menu_mobile">&#x2715</li>
+            <li><object data="vagadev-jr-main/svgs/logo.svg" width="100" type=""></object></li>
+        </ul>
+        <ul class="nav-drop" style="float: right; position: relative; bottom: 6.5rem;">
+            <li><object data="vagadev-jr-main/svgs/paper-plane.svg" type=""></object></li>
+            <li><object data="vagadev-jr-main/svgs/search-solid.svg" type=""></object></li>
+            <li><object data="vagadev-jr-main/svgs/shopping-bag-solid.svg" type=""></object></li>
+            <li style="position: relative; right: 2rem;" id="elipse-carrinho">
+                <p id="carrinho-menu-drop">0</p> <img id="elipse" src="vagadev-jr-main/img/Ellipse 1.png"></li>
+        </ul>
+        <ul style="margin-left: 2rem; margin-bottom: 8rem;">
+            <li class="titulo">Luta</li><br>
+            <li class="jogo">Mortal Kombat</li><br>
+            <li class="jogo">Smash Bros</li><br>
+            <li class="jogo">Killer Instict</li><br>
+            <li class="jogo">DBZ Kakarot</li>
+        </ul>
+        <ul style="margin-left: 2rem; margin-bottom: 8rem;">
+            <li class="titulo">Ação / Aventura</li><br>
+            <li class="jogo">GTA V</li><br>
+            <li class="jogo">Tomb Raider</li><br>
+            <li class="jogo">HALO</li><br>
+            <li class="jogo">Call of Duty</li>
+        </ul>
+        <ul style="margin-left: 2rem; margin-bottom: 8rem;">
+            <li class="titulo">Corrida</li><br>
+            <li class="jogo">NEED for SPEED</li><br>
+            <li class="jogo">Forza Horizon</li>
+        </ul>
+    </div>
+
+
+    <main class="main-laptop">
+
+        <div class="box zelda">
+            <img src="vagadev-jr-main/img/zelda_banner.jpg" width="440" height="300" />
+            <div>
+                <span> The Legend of Zelda - Breath of the wild</span>
+            </div>
+        </div>
+
+        <div class="box sekiro">
+            <img src="vagadev-jr-main/img/sekiro_banner.jpg" width="440" height="300" />
+            <div>
+                <span> SEKIRO - Shadows of die Dwices </span>
+            </div>
+        </div>
+
+
+        <div style="display: inline;">
+
+            <div style="display: inline;"><object data="vagadev-jr-main/svgs/marcador.svg" type="image/svg+xml"></object></div>
+
+
+            <h1 style="display: inline;" class="destaque">Produtos em Destaque</h1>
+
+
+        </div>
+
+        <div id="modal" class="modal">
+            <div id="pop-up" class="pop-up">
+                <img width="40" height="40" id="close-pop" class="close-pop" src="vagadev-jr-main/img/close_btn.png" alt="">
+                <p class="txt-pop-up">Pedido realizado com sucesso!</p>
+                <img width="100" height="140" class="mario-pop" src="vagadev-jr-main/img/mario-pop.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="box-jogo">
+                <img src="vagadev-jr-main/img/product-outriders.png" width="300px" height="350px">
+                <div class="desc-jogo">
+                    <span class="titulo-jogo">Outriders</span><br><br>
+                    <span class="preco-jogo">R$ 200,00</span><br><br>
+                    <button onClick="comprar(this.id)" id="1" class="btn">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="box-jogo">
+                <img src="vagadev-jr-main/img/product-cyberpunk2077.png" width="300px" height="350px">
+                <div class="desc-jogo">
+                    <span class="titulo-jogo">Cyberpunk</span><br><br>
+                    <span class="preco-jogo">R$ 200,00</span><br><br>
+                    <button onClick="comprar(this.id)" id="2" class="btn">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="box-jogo">
+                <img src="vagadev-jr-main/img/product-donkey-kong-country-tropical-freeze.png" width="300px" height="350px">
+                <div class="desc-jogo">
+                    <span class="titulo-jogo">Donkey Kong</span><br><br>
+                    <span class="preco-jogo">R$ 200,00</span><br><br>
+                    <button onClick="comprar(this.id)" id="3" class="btn">COMPRAR</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--MOBILE-->
+
+    <main style="margin-top: -14rem;" class="main-mobile">
+
+
+
+        <div style="text-align: center;" class="box-zelda">
+            <img src="vagadev-jr-main/img/zelda_banner.jpg" width="380" height="240" />
+            <div>
+                <span> The Legend of Zelda - Breath of the wild</span>
+            </div>
+        </div>
+
+        <div style="text-align: center;" class="box-sekiro">
+            <img src="vagadev-jr-main/img/sekiro_banner.jpg" width="380" height="240" />
+            <div>
+                <span> SEKIRO - Shadows of die Dwices </span>
+            </div>
+        </div>
+
+
+
+
+        <div style="display: inline; position: relative; left: 3rem;">
+
+            <div style="display: inline;"><object data="vagadev-jr-main/svgs/marcador.svg" type="image/svg+xml"></object></div>
+
+
+            <h1 style="display: inline;" class="destaque">Produtos em Destaque</h1>
+
+
+        </div>
+
+        <div id="modal-mobile" class="modal">
+            <div id="pop-up" class="pop-up">
+                <img width="40" height="40" id="close-pop-mobile" class="close-pop" src="vagadev-jr-main/img/close_btn.png" alt="">
+                <p class="txt-pop-up">Pedido realizado com sucesso!</p>
+                <img width="100" height="140" class="mario-pop" src="vagadev-jr-main/img/mario-pop.png" alt="" srcset="">
+            </div>
+        </div>
+        <div style="position: relative; margin-bottom: 1.5rem;"></div>
+        <div class="box-jogo"></div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <img src="vagadev-jr-main/img/product-outriders.png" width="300px" height="350px">
+                    <div class="carousel-caption">
+                        <div class="desc-jogo">
+                            <span class="titulo-jogo">Outriders</span><br><br>
+                            <span class="preco-jogo">R$ 200,00</span><br><br>
+                            <button onClick="comprar(this.id)" id="m1" class="btn">COMPRAR</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="vagadev-jr-main/img/product-cyberpunk2077.png" width="300px" height="350px">
+                    <div class="carousel-caption">
+                        <div class="desc-jogo">
+                            <span class="titulo-jogo">Cyberpunk</span><br><br>
+                            <span class="preco-jogo">R$ 200,00</span><br><br>
+                            <button onClick="comprar(this.id)" id="m2" class="btn">COMPRAR</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="vagadev-jr-main/img/product-donkey-kong-country-tropical-freeze.png" width="300px" height="350px">
+                    <div class="carousel-caption">
+                        <div class="desc-jogo">
+                            <span class="titulo-jogo">Donkey Kong</span><br><br>
+                            <span class="preco-jogo">R$ 200,00</span><br><br>
+                            <button onClick="comprar(this.id)" id="m3" class="btn">COMPRAR</button>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"><</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">></span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <ul class="lado-a-lado laptop">
+            <li class="n1"><img src="vagadev-jr-main/img/logo_header 1.png"></li>
+            <li class="copy">
+                <g>Agência N1 - Todos os direitos reservados</g>
+            </li>
+        </ul>
+        <ul class="lado-a-lado mobile">
+            <li class="n1"><img src="vagadev-jr-main/img/logo_header 1.png"></li>
+            <li class="copy">
+                <g>Agência N1 - Todos os direitos reservados</g>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
